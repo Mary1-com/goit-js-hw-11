@@ -31,7 +31,7 @@ form.addEventListener('submit', async e => {
     try {
         const data = await getImagesByQuery(query);
 
-        if (data.hits.lenght === 0) {
+        if (data.hits.length === 0) {
             iziToast.error({
                 message: "Sorry, there are no images matching your search query. Please try again!",
             })
